@@ -89,7 +89,7 @@ export default function Hero() {
             src="/home.png"
             alt="House"
             fill
-            className="pointer-events-none select-none"
+            className="pointer-events-none select-none object-cover"
           />
         </motion.div>
         <motion.div
@@ -100,7 +100,7 @@ export default function Hero() {
             src="/home1.jpg"
             alt="House"
             fill
-            className="pointer-events-none select-none"
+            className="pointer-events-none select-none object-cover"
           />
         </motion.div>
 
