@@ -83,31 +83,29 @@ export default function Hero() {
         {/* ---------- House illustration ---------- */}
         <motion.div
           style={{ y: houseY, scale: houseScale }}
-          className="absolute inset-x-0 bottom-[0%] z-20 flex justify-center"
+          className="absolute inset-x-0 bottom-[0%] z-20 flex justify-center w-full h-full"
         >
           <Image
             src="/home.png"
             alt="House"
-            width={2100}
-            height={400}
+            fill
             className="pointer-events-none select-none"
           />
         </motion.div>
         <motion.div
           style={{ y: houseY, scale: houseScale }}
-          className="absolute inset-x-0 bottom-[0%] z-19 flex justify-center"
+          className="absolute inset-x-0 bottom-[0%] z-18 flex justify-center w-full h-full"
         >
           <Image
             src="/home1.jpg"
             alt="House"
-            width={2100}
-            height={400}
+            fill
             className="pointer-events-none select-none"
           />
         </motion.div>
 
         {/* foreground grass */}
-        <div className="absolute inset-x-0 bottom-0 h-[18%]">
+        <div className="absolute inset-x-0 bottom-0 h-[18%] z-20">
           <svg viewBox="0 0 1440 200" preserveAspectRatio="none" className="h-full w-full">
             <path
               d="M0,60 C 200,20 300,90 500,50 C 750,0 950,80 1200,40 C 1320,20 1400,50 1440,40 L1440,200 L0,200 Z"
@@ -163,7 +161,7 @@ export default function Hero() {
         {/* ---------- Giant parallax title ---------- */}
         <motion.h1
           style={{ y: terraY, opacity: terraOpacity }}
-          className="pointer-events-none absolute inset-x-0 top-[14%] -left-[1350px] z-10 select-none text-center font-display leading-none text-cream"
+          className="pointer-events-none absolute inset-x-0 top-[14%] -left-[1350px] z-19 select-none text-center font-display leading-none text-cream"
         >
           <span className="block text-[22vw] tracking-tight sm:text-[10vw]">
             TERRA
